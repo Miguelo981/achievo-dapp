@@ -1,0 +1,32 @@
+{
+  "name": "achievo-dapp",
+  "version": "1.0.0",
+  "description": "dApp for goals achieving by doing challenges",
+  "keywords": [
+    "eth",
+    "web3",
+    "blockchain",
+    "dapp",
+    "polygon",
+    "bsc",
+    "ethereum"
+  ],
+  "private": true,
+  "scripts": {
+    "prepare": "husky",
+    "lint": "pnpm -r lint",
+    "format": "pnpm -r format",
+    "test:all": "pnpm -r test"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.1"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,jsx,json,md}": [
+      "prettier --write"
+    ]
+  }
+}
