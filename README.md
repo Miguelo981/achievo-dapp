@@ -48,7 +48,10 @@ Achievo is a decentralized application (dApp) for achieving goals by completing 
    deno task start
    ```
 
+   See [server/README.md](./server/README.md) for more details.
+
 5. **Develop and test smart contracts:**
+
    ```bash
    cd contracts
    pnpm test
@@ -57,6 +60,8 @@ Achievo is a decentralized application (dApp) for achieving goals by completing 
    # or
    pnpm deploy:contracts
    ```
+
+   See [contracts/README.md](./contracts/README.md) for more details.
 
 ## Scripts
 
