@@ -1,0 +1,66 @@
+{
+  "challenge_form": {
+    "title": "Create new challenge",
+    "controls": {
+      "next": "Next",
+      "create": "Create"
+    },
+    "steps": {
+      "challenge": {
+        "goal": {
+          "label": "Goal *",
+          "placeholder": "Lose 5lbs weight..."
+        },
+        "deadline": {
+          "label": "Deadline *"
+        },
+        "locked_amount": {
+          "label": "Amount of ETH to lock *"
+        }
+      },
+      "signer": {
+        "email": {
+          "label": "Signer's email",
+          "placeholder": "signer@email",
+          "description": "The email will be used for notifications. It will not be shared with anyone and will not be stored in the blockchain."
+        }
+      },
+      "supervisor": {
+        "address": {
+          "label": "Supervisor's ETH address *",
+          "placeholder": "0xE257G4I..."
+        },
+        "email": {
+          "label": "Supervisor's email",
+          "placeholder": "supervisor@email.com"
+        }
+      }
+    }
+  },
+  "stake": {
+    "min": "Min",
+    "loading": "Loading..."
+  },
+  "gas_fee": {
+    "label": "Estimated fee"
+  },
+  "challenge_count": {
+    "label": "Created challenges"
+  },
+  "challenge_card": {
+    "locked_amount": "Locked amount:",
+    "remaining_time": "Remaining time",
+    "completed": "Completed"
+  },
+  "challenge_actions": {
+    "confirm": "Confirm challenge",
+    "withdraw": "Withdraw",
+    "claim": "Claim"
+  },
+  "toast": {
+    "challenge_created": "Challenge created",
+    "challenge_withdrawn": "Challenge withdrawn successfully",
+    "challenge_confirmed": "Challenge confirmed successfully",
+    "challenge_claimed": "Challenge claimed successfully"
+  }
+}
