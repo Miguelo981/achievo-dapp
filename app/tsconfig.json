@@ -1,0 +1,31 @@
+{
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["../server/src/**/*", "../contracts/artifacts/contracts/**/*"],
+  "compilerOptions": {
+    "target": "ESNext",
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "types": ["vite/client"],
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": false,
+    "noEmit": true,
+
+    /* Linting */
+    "skipLibCheck": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@server/*": ["../server/src/*"],
+      "@contracts/*": ["../contracts/artifacts/contracts/*"]
+    }
+  }
+}
