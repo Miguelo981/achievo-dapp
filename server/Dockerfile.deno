@@ -1,0 +1,17 @@
+# Use the official Deno image
+FROM denoland/deno:1.40.0
+
+# Set working directory
+WORKDIR /app
+
+# Copy source code and configuration files
+COPY . .
+
+# Cache dependencies
+RUN deno cache src/index.ts
+
+# Expose port
+EXPOSE 3000
+
+# Start the server
+CMD ["run", "--allow-net", "--allow-env", "--allow-read", "src/index.ts"] 

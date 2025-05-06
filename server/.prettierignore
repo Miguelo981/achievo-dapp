@@ -1,0 +1,15 @@
+*.tsbuildinfo
+__generated__
+__mocks__
+.detoxrc.js
+.tamagui
+.pnpm
+@types
+*.html
+*.inc
+*.json
+*.md
+*.yml
+build
+dist
+node_modules
