@@ -1,0 +1,46 @@
+{
+  "name": "achievo-contracts",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "clean": "rimraf ./artifacts ./cache ./coverage ./types ./coverage.json ./ignition/deployments && pnpm run typechain",
+    "node": "hardhat node",
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "coverage": "hardhat coverage",
+    "typechain": "hardhat typechain",
+    "watch-test": "hardhat watch",
+    "deploy:contracts": "hardhat ignition deploy ./ignition/modules/ChallengeCore.ts --network localhost"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ignition": "^0.15.0",
+    "@nomicfoundation/hardhat-ignition-viem": "^0.15.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox-viem": "^3.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@nomicfoundation/hardhat-viem": "^2.0.6",
+    "@typechain/hardhat": "^9.1.0",
+    "@types/chai": "^4.2.0",
+    "@types/chai-as-promised": "^7.1.6",
+    "@types/mocha": ">=9.1.0",
+    "@types/node": ">=18.0.0",
+    "chai": "^4.2.0",
+    "hardhat": "^2.14.0",
+    "hardhat-gas-reporter": "^1.0.8",
+    "openzeppelin-solidity": "^3.4.2",
+    "prettier": "^3.5.3",
+    "rimraf": "^6.0.1",
+    "solhint": "^5.0.5",
+    "solhint-plugin-prettier": "^0.1.0",
+    "solidity-coverage": "^0.8.0",
+    "ts-node": ">=8.0.0",
+    "typescript": "~5.0.4",
+    "viem": "^2.7.6"
+  },
+  "engines": {
+    "node": ">=10"
+  }
+}
